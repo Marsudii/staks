@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>staks. — Roblox creative studio</title>
+  <meta name="description" content="staks. is a Roblox creative studio: map design, game systems, assets, 3D, video and photo editing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!--
+    Media blocks (.ph) are animated gradient placeholders.
+    Add data-video="path/to/clip.mp4" to any .ph to swap in a muted looping video.
+  -->
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" aria-hidden="true">
+    <div class="bg"></div>
+    <div class="preloader-logo"><span class="logo-crop lc-pre"><img src="img/peace-banner.png" alt="staks."></span></div>
+  </div>
+
+  <!-- Header -->
+  <header class="page-header">
+    <div class="container">
+      <a class="nav-logo" href="#" aria-label="staks. — back to homepage"><span class="logo-crop lc-nav"><img src="img/peace-banner.png" alt="staks."></span></a>
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a class="nav-link b2" href="#work">Portfolio<span class="hover-line"></span></a></li>
+          <li><a class="nav-link b2" href="#about">About<span class="hover-line"></span></a></li>
+          <li><a class="nav-link b2" href="#services">Services<span class="hover-line"></span></a></li>
+          <li><a class="nav-link b2" href="https://www.roblox.com/communities/975304744/staks#!/about" target="_blank" rel="noopener">Community<svg class="ext" viewBox="0 0 8 8" aria-hidden="true"><path d="M1 7 7 1M2.5 1H7v4.5" stroke="currentColor" fill="none" stroke-width="1.2"/></svg><span class="hover-line"></span></a></li>
+          <li><a class="btn b2" href="#contact"><span class="fill-overlay"></span><span>Get in touch</span></a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="dropdown-menu" aria-hidden="true">
+    <div class="container">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#work">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="https://www.roblox.com/communities/975304744/staks#!/about" target="_blank" rel="noopener">Community</a></li>
+          <li><a href="#contact">Get in touch</a></li>
+        </ul>
+      </nav>
+      <ul class="social-list b0">
+        <li><a href="#">Roblox</a></li><li><a href="#">Discord</a></li><li><a href="#">YouTube</a></li>
+        <li><a href="#">TikTok</a></li><li><a href="#">X</a></li><li><a href="#">ArtStation</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero_title">
+      <div class="container">
+        <h1 class="a5 title">
+          <span class="line"><span class="line-inner" style="--i:0">Roblox studio</span></span>
+          <span class="line"><span class="line-inner" style="--i:1">for standout <span class="flip" data-words="maps,systems,assets,3D,videos,photos"></span></span></span>
+        </h1>
+      </div>
+    </section>
+
+    <!-- Showreel -->
+    <section class="video_module">
+      <div class="container">
+        <button class="video-wrapper" data-cursor="Play reel" data-open-reel aria-label="Play showreel">
+          <div class="ph ph-reel" data-img="img/peace-1.webp"></div>
+          <div class="text-overlay">
+            <div><p class="b0 video-text">Showreel</p><p class="b2 duration">45 sec</p></div>
+            <span class="play-button"><svg viewBox="0 0 16 12" aria-hidden="true"><path d="M2 0v12l12-6z" fill="#000"/></svg></span>
+          </div>
+          <div class="animation-overlay"></div>
+        </button>
+      </div>
+    </section>
+
+    <!-- Featured work -->
+    <section class="featured_work_slider" id="work">
+      <div class="container">
+        <div class="title-arrows">
+          <h2 class="a2 big-title" data-reveal>Featured Work</h2>
+          <div class="slider-arrows">
+            <a class="btn b2" href="#work"><span class="fill-overlay"></span><span>View All</span></a>
+            <button class="circle arrow" data-slide="work" data-dir="-1" aria-label="Previous"><span class="circle-overlay"></span><span class="arrows prev"></span></button>
+            <button class="circle arrow" data-slide="work" data-dir="1" aria-label="Next"><span class="circle-overlay"></span><span class="arrows"></span></button>
+          </div>
+        </div>
+      </div>
+      <div class="slider" id="slider-work">
+        <ul class="track" data-cards></ul>
+      </div>
+    </section>
+
+    <!-- Statement -->
+    <section class="simple_text" id="about">
+      <div class="container">
+        <h3 class="a5 big-title" data-reveal>Great Roblox games are built on solid maps, clean systems and assets players remember — we make all three.</h3>
+      </div>
+    </section>
+
+    <!-- Rotating object + copy -->
+    <section class="rotating_slider">
+      <div class="container">
+        <div class="wrapper">
+          <div class="column media-col">
+            <div class="ph ph-orb" style="--c1:#f2efe8;--c2:#8a8f98;--c3:#000"></div>
+          </div>
+          <div class="column">
+            <p class="b1 description" data-reveal>From the first blockout to the launch trailer, we build maps, scripts, 3D assets and promo content for Roblox developers and groups.</p>
+            <a class="button b0" href="#contact">Get in touch
+              <span class="circle"><span class="circle-overlay"></span><span class="arrows"></span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services_module" id="services">
+      <div class="container">
+        <div class="wrapper" data-services>
+          <p class="b1 title">Services</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slider with text -->
+    <section class="slider_with_text">
+      <div class="slider" id="slider-studio">
+        <ul class="track" data-gallery></ul>
+      </div>
+      <div class="container">
+        <div class="boxes">
+          <div class="slider-arrows">
+            <button class="circle arrow" data-slide="studio" data-dir="-1" aria-label="Previous"><span class="circle-overlay"></span><span class="arrows prev"></span></button>
+            <button class="circle arrow" data-slide="studio" data-dir="1" aria-label="Next"><span class="circle-overlay"></span><span class="arrows"></span></button>
+          </div>
+          <div class="boxes-extra">
+            <p class="box b0">One team for the whole pipeline: map design, game systems, assets and 3D models, plus the video and photo edits that sell your game.</p>
+            <p class="box b0">staks. is a commission platform for development and creative services. Our community is the showcase for our work and what we can build for you.</p>
+            <a class="button b0" href="#about">About Studio
+              <span class="circle"><span class="circle-overlay"></span><span class="arrows"></span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="background_video_cta" id="community">
+      <div class="container">
+        <a class="video-wrapper" href="https://www.roblox.com/communities/975304744/staks#!/about" target="_blank" rel="noopener" data-cursor="Visit Community">
+          <div class="ph ph-cta" data-img="img/peace-2.webp"></div>
+          <div class="text-wrapper">
+            <h2 class="a5 title" data-reveal>Commission something big with staks.</h2>
+            <span class="btn-pill b2">Visit Community</span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="page-footer" id="contact">
+    <div class="container">
+      <ul class="social-networks b0" data-socials></ul>
+      <div class="lower-wrapper"><span class="logo-crop lc-foot"><img src="img/peace-banner.png" alt="staks."></span></div>
+      <div class="upper-wrapper">
+        <p class="info-text">An independent space by staks.</p>
+        <ul class="gdpr-menu b2">
+          <li><a href="#">Index</a></li>
+          <li><a href="#">Impressum</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><span>© staks. — All rights reserved.</span></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fullscreen reel -->
+  <div class="fullscreen-video" aria-hidden="true">
+    <div class="fs-stage"><div class="ph ph-reel" data-img="img/peace-1.webp"></div></div>
+    <div class="video-controls">
+      <button class="circle" data-play aria-label="Play / pause">
+        <span class="circle-overlay"></span>
+        <svg class="i-pause" viewBox="0 0 8 16"><path d="M0 0h2.5v16H0zM5.5 0H8v16H5.5z" fill="currentColor"/></svg>
+        <svg class="i-play" viewBox="0 0 12 14"><path d="M0 0v14l12-7z" fill="currentColor"/></svg>
+      </button>
+      <input type="range" class="progress-bar" min="0" max="1000" value="0" aria-label="Progress">
+      <button class="circle muted" data-mute aria-label="Mute / unmute">
+        <span class="circle-overlay"></span>
+        <svg class="i-sound" viewBox="0 0 19 14"><path d="M0 4h4l5-4v14l-5-4H0z" fill="currentColor"/><path d="M12 3.5c1.4 1 2.2 2.2 2.2 3.5s-.8 2.5-2.2 3.5M14.5 1c2.2 1.6 3.4 3.6 3.4 6s-1.2 4.4-3.4 6" stroke="currentColor" fill="none" stroke-width="1.4"/></svg>
+        <svg class="i-mute" viewBox="0 0 19 14"><path d="M0 4h4l5-4v14l-5-4H0z" fill="currentColor"/><path d="m12 4 6 6m0-6-6 6" stroke="currentColor" stroke-width="1.4"/></svg>
+      </button>
+    </div>
+    <button class="circle close-fs" aria-label="Close"><span class="circle-overlay"></span><svg viewBox="0 0 12 12"><path d="m1 1 10 10M11 1 1 11" stroke="currentColor" stroke-width="1.5"/></svg></button>
+  </div>
+
+  <div class="cursor" aria-hidden="true"><span class="b2"></span></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
